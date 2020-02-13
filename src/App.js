@@ -18,14 +18,15 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/generos/novo' exact component={NewGenre} />
-          <Route path='/generos/:id' exact component={EditGenre} />
-          <Route path='/generos' exact component={Genres} />
-          <Route path='*' component={NotFound}>
-          </Route>
-        </Switch>
+        <div className='container'>
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/generos/novo' exact component={NewGenre} />
+            <Route path='/generos/:id' exact component={EditGenre} />
+            <Route path='/generos' exact component={Genres} />
+            <Route path='*' component={NotFound} />
+          </Switch>
+        </div>
       </div>
     </Router>
   );

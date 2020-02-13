@@ -27,7 +27,7 @@ const Generos = () => {
                 <td>{record.name}</td>
                 <td>
                     <button onClick={() => deleteGenero(record.id)} className='btn btn-danger'>Remover</button>
-                    <Link className='btn btn-light' to={'/generos/' + record.id}>Editar</Link>
+                    <Link className='btn btn-warning' to={'/generos/' + record.id}>Editar</Link>
                 </td>
             </tr>
 
@@ -38,7 +38,8 @@ const Generos = () => {
             <div className='container'>
                 <h1>Genêro</h1>
                 <div>
-                    <Link className='btn btn-light' to='/generos/novo'>Novo Genêro</Link>
+                    <Link className='btn-primary' to='/generos/novo'>Novo Genêro</Link>
+                    <br />
                 </div>
                 <div className='alert alert-warning text-uppercase ' role='alert'>
                     <span className='font-weight-bold' >
@@ -53,7 +54,8 @@ const Generos = () => {
         <div className='container'>
             <h1>Genêros</h1>
             <div>
-                <Link className='btn btn-light' to='/generos/novo'>Novo Genêro</Link>
+                <Link className='btn btn-primary' to='/generos/novo'>Novo Genêro</Link>
+                <br />
             </div>
             <table className='table table-dark'>
                 <thead>
