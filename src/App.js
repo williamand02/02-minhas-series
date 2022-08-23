@@ -6,6 +6,7 @@ import Genres from './pages/Genres'
 import NewGenre from './pages/NewGenre'
 import EditGenre from './pages/EditGenre'
 
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const Home = () => {
@@ -13,7 +14,6 @@ const Home = () => {
 }
 
 function App() {
-
   return (
     <Router>
       <div className="App">
